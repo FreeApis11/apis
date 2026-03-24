@@ -3,7 +3,7 @@ import {
     getAllUsers,
     getUserById,
     getUsersBySalary
-} from "../controlles/user.controller.js"
+} from "../controllers/user.controllers.js"
 
 const router = express.Router()
 

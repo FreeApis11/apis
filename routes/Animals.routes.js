@@ -1,5 +1,5 @@
 import express from "express"
-import { getAllAnimals, getUserByCat ,getUserByName} from "../controlles/Animals.controller.js"
+import { getAllAnimals, getUserByCat ,getUserByName} from "../controllers/animals.controllers.js"
  
  
 

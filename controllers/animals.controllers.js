@@ -1,4 +1,4 @@
-import { AnimalsArray } from "../models/Animals.model.js"
+import { AnimalsArray } from "../models/Animals.models.js"
  
 
 export const  getAllAnimals = (req,res)=>{
