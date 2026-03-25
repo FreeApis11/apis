@@ -256,7 +256,7 @@ app.get("/", (req, res) => {
   <td>Get by Title</td>
   <td>GET</td>
   <td><code>/Books/title/:title</code></td>
-  <td><code id="m3">https://apis-z5tu.onrender.com/Books/title/inception</code></td>
+  <td><code id="m3">https://apis-z5tu.onrender.com/Books/title/The Hobbit</code></td>
   <td><button onclick="copy('m3', this)">Copy</button></td>
 </tr>
 
