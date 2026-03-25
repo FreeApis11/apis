@@ -229,7 +229,7 @@ app.get("/", (req, res) => {
 
 <hr>
 
-<h2>🎥 Movies APIs</h2>
+<h2>📖 Books APIs</h2>
 <div class="table-container">
 <table>
 <tr>
@@ -237,27 +237,44 @@ app.get("/", (req, res) => {
 </tr>
 
 <tr>
-  <td>Get All Movies</td>
+  <td>Get All Books</td>
   <td>GET</td>
-  <td><code>/movies/</code></td>
-  <td><code id="m1">https://apis-z5tu.onrender.com/movies/</code></td>
+  <td><code>/Books/</code></td>
+  <td><code id="m1">https://apis-z5tu.onrender.com/Books/</code></td>
   <td><button onclick="copy('m1', this)">Copy</button></td>
 </tr>
 
 <tr>
-  <td>Get Movie by ID</td>
+  <td>Get Books by ID</td>
   <td>GET</td>
-  <td><code>/movies/:id</code></td>
-  <td><code id="m2">https://apis-z5tu.onrender.com/movies/123</code></td>
+  <td><code>/Books/:id</code></td>
+  <td><code id="m2">https://apis-z5tu.onrender.com/Books/123</code></td>
   <td><button onclick="copy('m2', this)">Copy</button></td>
 </tr>
 
 <tr>
   <td>Get by Title</td>
   <td>GET</td>
-  <td><code>/movies/title/:title</code></td>
-  <td><code id="m3">https://apis-z5tu.onrender.com/movies/title/inception</code></td>
+  <td><code>/Books/title/:title</code></td>
+  <td><code id="m3">https://apis-z5tu.onrender.com/Books/title/inception</code></td>
   <td><button onclick="copy('m3', this)">Copy</button></td>
+</tr>
+
+
+<tr>
+  <td>Get by year</td>
+  <td>GET</td>
+  <td><code>/Books/year/:year</code></td>
+  <td><code id="m5">https://apis-z5tu.onrender.com/Books/year/2000</code></td>
+  <td><button onclick="copy('m5', this)">Copy</button></td>
+</tr>
+
+<tr>
+  <td>Get by genere</td>
+  <td>GET</td>
+  <td><code>/Books/genere/:genere</code></td>
+  <td><code id="m6">https://apis-z5tu.onrender.com/Books/genere/Thriller</code></td>
+  <td><button onclick="copy('m6', this)">Copy</button></td>
 </tr>
 
 </table>
