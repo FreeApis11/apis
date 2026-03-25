@@ -13,56 +13,103 @@ app.get("/", (req, res) => {
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FreeAPI Hub</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
-      padding: 20px;
+      padding: 15px;
+      margin: 0;
       line-height: 1.6;
     }
+
     h1, h2 {
       text-align: center;
     }
+
     p.center {
       text-align: center;
     }
+
     ul {
       max-width: 400px;
       margin: auto;
+      padding-left: 20px;
     }
+
+    /* TABLE WRAPPER (important for mobile) */
+    .table-container {
+      overflow-x: auto;
+    }
+
     table {
       border-collapse: collapse;
       width: 100%;
+      min-width: 600px; /* keeps layout readable */
       margin: 20px 0;
     }
+
     th, td {
       border: 1px solid #ccc;
-      padding: 8px;
+      padding: 10px;
       text-align: left;
+      font-size: 14px;
     }
+
     th {
       background-color: #f4f4f4;
     }
+
     code {
       background: #f9f9f9;
-      padding: 2px 5px;
+      padding: 3px 6px;
       border-radius: 4px;
+      font-size: 13px;
+      word-break: break-all;
     }
+
     button {
-      margin-left: 5px;
-      padding: 4px 8px;
+      padding: 6px 10px;
       cursor: pointer;
       border: none;
       background: #007bff;
       color: white;
-      border-radius: 4px;
-      font-size: 12px;
+      border-radius: 5px;
+      font-size: 13px;
     }
+
     button:hover {
       background: #0056b3;
     }
+
     .copied {
       background: green !important;
+    }
+
+    hr {
+      margin: 30px 0;
+    }
+
+    /* 📱 SMALL SCREENS */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 22px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      th, td {
+        font-size: 12px;
+        padding: 8px;
+      }
+
+      button {
+        font-size: 12px;
+        padding: 5px 8px;
+      }
     }
   </style>
 </head>
@@ -75,6 +122,7 @@ app.get("/", (req, res) => {
 <hr>
 
 <h2>👤 Users APIs</h2>
+<div class="table-container">
 <table>
 <tr>
   <th>API</th><th>Method</th><th>Endpoint</th><th>Example</th><th>Copy</th>
@@ -105,10 +153,12 @@ app.get("/", (req, res) => {
 </tr>
 
 </table>
+</div>
 
 <hr>
 
 <h2>🐾 Animals APIs</h2>
+<div class="table-container">
 <table>
 <tr>
   <th>API</th><th>Method</th><th>Endpoint</th><th>Example</th><th>Copy</th>
@@ -139,10 +189,12 @@ app.get("/", (req, res) => {
 </tr>
 
 </table>
+</div>
 
 <hr>
 
 <h2>📝 Posts APIs</h2>
+<div class="table-container">
 <table>
 <tr>
   <th>API</th><th>Method</th><th>Endpoint</th><th>Example</th><th>Copy</th>
@@ -173,10 +225,12 @@ app.get("/", (req, res) => {
 </tr>
 
 </table>
+</div>
 
 <hr>
 
 <h2>🎥 Movies APIs</h2>
+<div class="table-container">
 <table>
 <tr>
   <th>API</th><th>Method</th><th>Endpoint</th><th>Example</th><th>Copy</th>
@@ -207,6 +261,7 @@ app.get("/", (req, res) => {
 </tr>
 
 </table>
+</div>
 
 <script>
 function copy(id, btn) {
